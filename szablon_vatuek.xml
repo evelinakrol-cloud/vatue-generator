@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Deklaracja xmlns="http://crd.gov.pl/wzor/2020/07/03/9689/"
+><Naglowek
+><KodFormularza kodSystemowy="VATUEK (5)" wersjaSchemy="1-0E"
+>VAT-UEK</KodFormularza
+><WariantFormularza
+>5</WariantFormularza
+><Rok
+>2021</Rok
+><Miesiac
+>3</Miesiac
+><CelZlozenia
+>1</CelZlozenia
+><KodUrzedu
+>1471</KodUrzedu
+></Naglowek
+><Podmiot1 rola="Podatnik"
+><etd:OsobaNiefizyczna xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2020/03/11/eD/DefinicjeTypy/"
+><etd:NIP
+>9372443460</etd:NIP
+><etd:PelnaNazwa
+>ENERSYS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</etd:PelnaNazwa
+></etd:OsobaNiefizyczna
+></Podmiot1
+><PozycjeSzczegolowe
+><AlwaysShow
+/></PozycjeSzczegolowe
+><Pouczenie
+>1</Pouczenie
+></Deklaracja
+>
