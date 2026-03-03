@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Deklaracja xmlns="http://crd.gov.pl/wzor/2021/01/12/10293/"
+><Naglowek
+><KodFormularza kodSystemowy="VAT-UE (5)" wersjaSchemy="2-0E"
+>VAT-UE</KodFormularza
+><WariantFormularza
+>5</WariantFormularza
+><Rok
+>2026</Rok
+><Miesiac
+>1</Miesiac
+><CelZlozenia
+>1</CelZlozenia
+><KodUrzedu
+>1436</KodUrzedu
+></Naglowek
+><Podmiot1 rola="Podatnik"
+><etd:OsobaNiefizyczna xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2020/03/11/eD/DefinicjeTypy/"
+><etd:NIP
+>5262953258</etd:NIP
+><etd:PelnaNazwa
+>EH EUROPE GMBH</etd:PelnaNazwa
+></etd:OsobaNiefizyczna
+></Podmiot1
+><PozycjeSzczegolowe
+><AlwaysShow
+/></PozycjeSzczegolowe
+><Pouczenie
+>1</Pouczenie
+></Deklaracja
+>
