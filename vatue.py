@@ -12,7 +12,7 @@ def generuj_vatue(df, nazwa_pliku, podmiot):
     root = tree.getroot()
 
     namespace = root.tag.split("}")[0].strip("{")
-ns = {"ns": namespace}
+    ns = {"ns": namespace}
 
     match = re.search(r"(\d{4})_(\d{2})", nazwa_pliku)
     rok = match.group(1)
@@ -72,4 +72,5 @@ ns = {"ns": namespace}
 
 
     return ET.tostring(root, encoding="utf-8", xml_declaration=True)
+
 
