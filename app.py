@@ -5,6 +5,11 @@ from vatuek import generuj_vatuek
 
 st.title("📄 Generator VAT-UE / VAT-UEK")
 
+podmiot = st.selectbox(
+    "Wybierz podmiot:",
+    ["ENERSYS", "EH EUROPE"]
+)
+
 typ = st.radio("Wybierz deklarację:", ["VAT-UE", "VAT-UEK"])
 
 plik = st.file_uploader("Wgraj plik Excel", type=["xlsx"])
@@ -16,7 +21,7 @@ if plik:
     if st.button("Generuj XML"):
 
         if typ == "VAT-UE":
-            xml = generuj_vatue(df, plik.name)
+            xml = generuj_vatue(df, plik.name, podmiot)
             nazwa = "VAT-UE.xml"
         else:
             xml = generuj_vatuek(df, plik.name)
@@ -27,4 +32,5 @@ if plik:
             data=xml,
             file_name=nazwa,
             mime="application/xml"
+
         )
