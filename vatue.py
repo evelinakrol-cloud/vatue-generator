@@ -2,9 +2,13 @@ import xml.etree.ElementTree as ET
 import re
 import pandas as pd
 
-def generuj_vatue(df, nazwa_pliku):
+def generuj_vatue(df, nazwa_pliku, podmiot):
 
-    tree = ET.parse("szablon_vatue.xml")
+    if podmiot == "ENERSYS":
+        tree = ET.parse("szablon_vatue.xml")
+    elif podmiot == "EH EUROPE":
+        tree = ET.parse("szablon_vatue_eh.xml")
+
     root = tree.getroot()
 
     ns = {"ns": "http://crd.gov.pl/wzor/2020/07/03/9690/"}
@@ -64,5 +68,6 @@ def generuj_vatue(df, nazwa_pliku):
                 ET.SubElement(grupa, "P_Ua").text = kraj
                 ET.SubElement(grupa, "P_Ub").text = vat
                 ET.SubElement(grupa, "P_Uc").text = kwota
+
 
     return ET.tostring(root, encoding="utf-8", xml_declaration=True)
